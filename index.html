@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scheduler-mvc.js"
+            type="text/javascript"></script>
+    <title>Tra, Thu - HA2</title>
+</head> 
+<body>
+    <div class="firstrow"><p>Set Priority: </p></div>
+    <div class="firstrow"><button class="button" id="highBtn">High</button></div>
+    <div class="firstrow"><button class="button" id="normalBtn">Normal</button></div>
+    <div class="firstrow"><button class="button" id="tentativeBtn">Tentative</button></div>
+    <div class="firstrow"><button class="button" id="help">?</button></div>
+
+    <div id="helpDetail">
+        1) Set priority of appointments by cliking one of the three buttons. Default priority is "Normal".<br /><br />
+        2) Fill in forms to set title, hour, and detail.<br /><br />
+        3) Title must not be empty, and hour must be an integer from 0 to 23.<br /><br />
+        4) Click "Add appointment" to add entries to the schedule. Schedule will be shown upon addition.<br /><br />
+        5) Click on each entry in the schedule to view details. Click on a second time to clear this view.<br /><br />
+        6) Click "Remove" to remove any entry.<br /><br />
+        7) Click "Clear all" to clear the schedule and all text fields.<br /><br />
+    </div>
+    <br />
+
+    <div class="secondrow"><p>Appointment Title: </p></div>
+    <div class="secondrow"><form><input type="text" id="title" /></form></div>
+    <div class="secondrow"><p>Appointment Hour: </p></div>
+    <div class="secondrow"><form><input type="text" id="hour" /></form></div>
+
+    <br />
+    <div class="thirdrow"><p>Appointment Details: </p></div>
+    <div class="thirdrow"><form><input type="text" id="detail" /></form></div>
+    <br />
+    <button class="button" id="add">Add Appointment</button>
+
+    <p><div class="scheduleText">Schedule</div></p>
+
+    <div class="fourthrow" id="schedule"></div>
+    <div class="fourthrow" id="viewDetail"></div>
+
+    <br /><button class="button" id="clear">Clear All</button>
+</body> 
+</html>
+

@@ -1,0 +1,53 @@
+html, body {
+    font: 12pt sans-serif;
+    padding: 10px;
+}
+
+button{
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    background: lightGray;
+    border: none;
+}
+
+.scheduleText{
+    font: 16pt sans-serif;
+    font-weight: bold;
+}
+
+input{
+    margin: 10px;
+}
+
+#title{
+    width: 250px;
+}
+
+#hour{
+    width: 25px;
+}
+
+#detail{
+    width: 425px;
+}
+
+.firstrow, .secondrow , .thirdrow, .fourthrow{
+    display: inline-block;
+}
+
+#help {
+    width: 20px;
+}
+
+#helpDetail {
+    display: none;
+    background: #F2F2F2;
+    font: 10pt sans-serif;
+}
+
+.fourthrow{
+    vertical-align: top;
+}
+
+
